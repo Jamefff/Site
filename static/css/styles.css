@@ -1,0 +1,327 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+h2 {
+    color: #de2e21;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do logo */
+.logo img {
+    max-width: 150px; /* Aumentando um pouco o tamanho do logo */
+    height: auto;
+}
+
+/* Estilo do botão */
+.botao img {
+    max-width: 58px; /* Diminuindo o tamanho do botão */
+    height: auto;
+}
+
+/* Estilo da seção da imagem */
+.imagem {
+    position: relative; /* Define a posição relativa para poder posicionar a faixa vermelha */
+    max-width: 100%; /* Define a largura máxima para a seção da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo da imagem dentro da seção */
+.imagem img {
+    max-width: 100%; /* Define a largura da imagem como 100% */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto-sobreposto {
+    position: absolute; /* Posicionamento absoluto */
+    top: 20%; /* Distância do topo em relação à altura da imagem */
+    left: -15%; /* Distância da esquerda em relação à largura da imagem */
+    color: white; /* Cor do texto */
+    width: 90%; /* Largura do texto em relação à largura da imagem */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.texto-sobreposto h3 {
+    font-size: 32px; /* Tamanho da fonte para a frase maior */
+    margin-bottom: 10px; /* Espaçamento abaixo da frase maior */
+}
+
+.texto-sobreposto p {
+    font-size: 16px; /* Tamanho da fonte para a frase menor */
+    margin-top: 0; /* Remove o espaçamento superior da frase menor */
+}
+
+/* Estilo do botão WhatsApp sobreposto */
+.botao-whatsapp {
+    position: absolute; /* Posicionamento absoluto */
+    top: 55%; /* Distância do topo em relação à altura da imagem */
+    left: 30%; /* Distância da esquerda em relação à largura da imagem */
+    transform: translate(-50%, -50%); /* Centraliza o botão vertical e horizontalmente */
+    background-color: #de2e21; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Preenchimento do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    cursor: pointer; /* Altera o cursor ao passar por cima do botão */
+}
+
+.botao-whatsapp-centralizado {
+    display: block; /* Transforma o link em um bloco */
+    margin: 0 auto; /* Centraliza o botão */
+    background-color: #de2e21; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 8px 16px; /* Preenchimento do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    font-size: 14px; /* Tamanho da fonte do botão */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    cursor: pointer; /* Altera o cursor ao passar por cima do botão */
+    margin-top: 10px; /* Espaçamento superior para separar do texto */
+    width: 160px;
+    height: auto;
+}
+
+/* Estilo da faixa vermelha */
+.faixa-vermelha {
+    position: relative; /* Posicionamento relativo */
+    height:105px;
+    background-color: #d15349; /* Cor vermelha */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 5px; /* Borda arredondada */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.faixa-vermelha p {
+    color: white; /* Cor do texto */
+    font-size: 26px; /* Aumenta o tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+}
+
+.faixa-vermelha a {
+    color: white;
+    font-size: 18pxpx;
+}
+
+.Imagem-container {
+    position: relative; /* Necessário para o posicionamento absoluto do texto */
+}
+
+.titulo-h4 {
+    font-size: 40px; /* Tamanho do título */
+    color: #de2e21; /* Cor do botão "cadastre-se" */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    text-align: center;
+}
+
+.Botão-sobreposto {
+    position: absolute; 
+    top: 1200px;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.botao-2 {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #de2e21; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+h6 {
+    text-align: center;
+    font-family: arial;
+    font-size: 30px; /* Defina o tamanho da fonte conforme necessário */
+    color: black; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+    line-height: 1.5; /* Altura da linha */
+}
+
+h6 strong {
+    font-weight: normal; /* Defina o peso da fonte para normal dentro do elemento strong */
+    font-family: verdana;
+    font-size: 56px;
+    color: #de2e21;
+}
+
+.BSnch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px; /* Reduzindo o espaçamento entre os elementos */
+}
+
+.sc-eHgmQL {
+    width: calc(30% - 5px); /* Ajustando a largura com base no espaçamento */
+    margin-bottom: 10px; /* Reduzindo a margem inferior */
+}
+
+.bg-red {
+    background-color: #de2e21;
+    color: #fff;
+    padding: 6px 12px; /* Reduzindo o padding */
+    margin-bottom: 5px; /* Reduzindo a margem inferior */
+    position: relative;
+}
+
+.bg-red span {
+    color: #000;
+}
+
+.bg-red::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -2px;
+    width: 2px;
+    background-color: #000;
+}
+
+.bphPrq div {
+    margin-bottom: 5px; /* Reduzindo a margem inferior */
+}
+
+.bphPrq h5 {
+    margin-top: 0;
+}
+
+.parallelogram {
+    transform: skew(-20deg);
+    display: inline-block;
+    position: relative;
+}
+
+.parallelogram span {
+    display: inline-block;
+    transform: skew(20deg);
+}
+
+.parallelogram h4 {
+    display: inline-block;
+    transform: skew(20deg);
+    margin: 0;
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+}
+
+
+
+.mapa img {
+    max-width: 100%; /* Define a largura da imagem como 100% do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+
+
+/* Estilo da ficha */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Estilo do grupo de formulários */
+.form-group {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo do botão centralizado */
+.btn-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-center button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #de2e21;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-center button i {
+    margin-left: 5px;
+}
+
+.rodape {
+    background-color: #808080; /* Cinza claro */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px; /* Ajuste o espaçamento horizontal conforme necessário */
+}
+
+.logo-contatos {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.logo img {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.contatos {
+    color: #FFFFFF; /* Define a cor do texto como branco */
+    margin-left: 20px; /* Ajusta o espaçamento entre o logo e os contatos */
+}
+
+.contatos p {
+    margin: 10px 0;
+}
+
+.emphasis {
+    font-size: 1.0em; /* Ajusta o tamanho do strong para dar mais ênfase */
+}
+
+.redes-sociais {
+    display: flex;
+}
+
+.icone-social {
+    color: #FFFFFF; /* Define a cor do ícone como branco */
+    margin-right: 10px; /* Ajuste o espaçamento entre os ícones conforme necessário */
+}

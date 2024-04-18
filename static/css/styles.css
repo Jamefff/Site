@@ -325,3 +325,14 @@ h6 strong {
     color: #FFFFFF; /* Define a cor do ícone como branco */
     margin-right: 10px; /* Ajuste o espaçamento entre os ícones conforme necessário */
 }
+
+
+@media screen and (max-width: 768px) {
+    .botao-2 {
+        display: block; /* O botão agora ocupará toda a largura do container */
+        width: 100%; /* Faz o botão esticar para ocupar 100% da largura disponível */
+        margin: 0 auto; /* Centraliza o botão horizontalmente */
+        padding: 15px 0; /* Aumenta o padding vertical para facilitar a interação tátil */
+        font-size: 18px; /* Aumenta o tamanho da fonte para melhor leitura em dispositivos pequenos */
+    }
+}

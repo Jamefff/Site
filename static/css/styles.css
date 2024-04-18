@@ -336,3 +336,30 @@ h6 strong {
         font-size: 18px; /* Aumenta o tamanho da fonte para melhor leitura em dispositivos pequenos */
     }
 }
+
+@media screen and (max-width: 768px) {
+    .texto-sobreposto {
+        top: 10%; /* Ajusta a posição vertical para evitar sobreposição */
+        left: 0; /* Centraliza o texto horizontalmente */
+        width: 100%; /* Faz o texto ocupar toda a largura da imagem */
+    }
+
+    .texto-sobreposto h3 {
+        font-size: 24px; /* Reduz o tamanho da fonte para melhor leitura */
+    }
+
+    .texto-sobreposto p {
+        font-size: 14px; /* Reduz o tamanho da fonte para consistência */
+    }
+
+    .botao-whatsapp {
+        top: 70%; /* Ajusta a posição vertical para dar espaço ao texto */
+        left: 50%; /* Centraliza o botão na tela */
+    }
+
+    .botao-whatsapp-centralizado {
+        width: 100%; /* Faz o botão ocupar toda a largura do container */
+        padding: 12px 0; /* Aumenta o padding para uma melhor interação tátil */
+        font-size: 16px; /* Mantém a legibilidade em telas pequenas */
+    }
+}

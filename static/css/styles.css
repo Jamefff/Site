@@ -1,162 +1,316 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* Estilo do corpo */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
 }
 
-h2 {
-    color: #de2e21;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;    
+    z-index: 50;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.navbar nav .button-menu img {
+    width: 24px;
+    height: 24px;
+}
+
+.section_container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 700px;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    margin: auto;
 }
 
-/* Estilo do logo */
-.logo img {
-    max-width: 150px; /* Aumentando um pouco o tamanho do logo */
-    height: auto;
+.left {
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    margin: 0 auto 0 0;
 }
 
-/* Estilo do botão */
-.botao img {
-    max-width: 58px; /* Diminuindo o tamanho do botão */
-    height: auto;
+.right {
+    justify-content: end;
+    align-items: center;
+    text-align: right;
+    margin: 0 0 0 auto;
 }
 
-/* Estilo da seção da imagem */
-.imagem {
-    position: relative; /* Define a posição relativa para poder posicionar a faixa vermelha */
-    max-width: 100%; /* Define a largura máxima para a seção da imagem */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+
+.section-spacing {
+        padding: 0 16px;
 }
 
-/* Estilo da imagem dentro da seção */
-.imagem img {
-    max-width: 100%; /* Define a largura da imagem como 100% */
-    height: auto; /* Mantém a proporção da imagem */
+.overlay {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 700px;
+    background: rgba(0, 0, 0, 1);
 }
 
-.texto-sobreposto {
-    position: absolute; /* Posicionamento absoluto */
-    top: 20%; /* Distância do topo em relação à altura da imagem */
-    left: -15%; /* Distância da esquerda em relação à largura da imagem */
-    color: white; /* Cor do texto */
-    width: 90%; /* Largura do texto em relação à largura da imagem */
-    text-align: center; /* Centraliza o texto horizontalmente */
-}
-
-.texto-sobreposto h3 {
-    font-size: 32px; /* Tamanho da fonte para a frase maior */
-    margin-bottom: 10px; /* Espaçamento abaixo da frase maior */
-}
-
-.texto-sobreposto p {
-    font-size: 16px; /* Tamanho da fonte para a frase menor */
-    margin-top: 0; /* Remove o espaçamento superior da frase menor */
-}
-
-/* Estilo do botão WhatsApp sobreposto */
-.botao-whatsapp {
-    position: absolute; /* Posicionamento absoluto */
-    top: 55%; /* Distância do topo em relação à altura da imagem */
-    left: 30%; /* Distância da esquerda em relação à largura da imagem */
-    transform: translate(-50%, -50%); /* Centraliza o botão vertical e horizontalmente */
-    background-color: #de2e21; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    padding: 10px 20px; /* Preenchimento do botão */
-    border: none; /* Remove a borda do botão */
-    border-radius: 5px; /* Borda arredondada do botão */
-    font-size: 16px; /* Tamanho da fonte do botão */
-    text-decoration: none; /* Remove o sublinhado padrão */
-    cursor: pointer; /* Altera o cursor ao passar por cima do botão */
-}
-
-.botao-whatsapp-centralizado {
-    display: block; /* Transforma o link em um bloco */
-    margin: 0 auto; /* Centraliza o botão */
-    background-color: #de2e21; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    padding: 8px 16px; /* Preenchimento do botão */
-    border: none; /* Remove a borda do botão */
-    border-radius: 5px; /* Borda arredondada do botão */
-    font-size: 14px; /* Tamanho da fonte do botão */
-    text-decoration: none; /* Remove o sublinhado padrão */
-    cursor: pointer; /* Altera o cursor ao passar por cima do botão */
-    margin-top: 10px; /* Espaçamento superior para separar do texto */
-    width: 160px;
-    height: auto;
-}
-
-/* Estilo da faixa vermelha */
-.faixa-vermelha {
-    position: relative; /* Posicionamento relativo */
-    height:105px;
-    background-color: #d15349; /* Cor vermelha */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Preenchimento interno */
-    border-radius: 5px; /* Borda arredondada */
-    margin-top: 20px; /* Espaçamento superior */
-}
-
-.faixa-vermelha p {
-    color: white; /* Cor do texto */
-    font-size: 26px; /* Aumenta o tamanho da fonte */
-    margin: 0; /* Remove margens padrão */
-}
-
-.faixa-vermelha a {
+.section_container .section_content {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
     color: white;
-    font-size: 18pxpx;
+    max-width: 700px;
+    padding: 32px;
 }
 
-.Imagem-container {
-    position: relative; /* Necessário para o posicionamento absoluto do texto */
+.section_container .section_content .section_content_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
 }
 
-.titulo-h4 {
-    font-size: 40px; /* Tamanho do título */
-    color: #de2e21; /* Cor do botão "cadastre-se" */
-    margin-bottom: 10px; /* Espaçamento inferior */
+.section_container .section_content .section_content_header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    
+}
+
+.section_container .backdrop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.section_container .backdrop-op-50 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.50;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    background: #aa281e;
+    padding: 8px 24px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 4);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+    max-width: 200px;
+}
+
+.highlight {
+    color: #b9342a;
+}
+
+.highlight-dark {
+    color: black;
+}
+
+.headline {
+    position: relative; 
+    background-color: #d15349; 
     text-align: center;
+    padding: 20px;
+    border-radius: 8px; 
+    color: white;
+    margin: 40px auto;
+    max-width: 700px;
+    width: 100%;
 }
 
-.Botão-sobreposto {
-    position: absolute; 
-    top: 1200px;
-    left: 50%; 
-    transform: translateX(-50%); 
+.headline h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
-.botao-2 {
-    display: inline-block; 
-    padding: 10px 20px; 
-    background-color: #de2e21; 
-    color: #fff; 
-    text-decoration: none; 
-    border-radius: 5px; 
+.section-title {
+    font-size: 2rem;
 }
 
-h6 {
+.section-subtitle {
+    font-size: 1.8rem;
+}
+
+.description {
+    font-size: 1.4rem;
+}
+
+
+.section-lists-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1350px;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.section-lists {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    justify-content: space-between;
+    width: 100%;
+    gap: 0 4rem;
+    padding: 0 1rem;
+
+    max-width: 1350px;
+}
+
+.section-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;    
+    margin-top: 2rem;
+}
+
+.section-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-list-wrapper .section-title-list {
+    font-size: 1rem;
+}
+
+.section-list-wrapper ul {
+    margin-left: 12px;
+    list-style-type: none;
+}
+
+.parallelogram {
+    transform: skew(-20deg);
+    display: inline-block;
+    position: relative;
+    color: white !important
+}
+
+.parallelogram span {
+    display: inline-block;
+    transform: skew(20deg);
+    font-size: 1.4rem;
+    color: white !important;
+}
+
+.map {
+    width: 100%;
+    height: 800px;
+    margin: 6rem auto;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+    margin: 4rem auto;
+    background: white;
+    padding: 2rem;
+}
+
+
+.contact-form-wrapper {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.contact-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2rem 0;
+
+}
+
+.contact-form button {
+    margin-top: 2rem;
+}
+
+.contact-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.contact-form button  {
     text-align: center;
-    font-family: arial;
-    font-size: 30px; /* Defina o tamanho da fonte conforme necessário */
-    color: black; /* Cor do texto */
-    font-weight: bold; /* Peso da fonte */
-    line-height: 1.5; /* Altura da linha */
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #de2e21;
+    color: #fff;
+    cursor: pointer;
 }
 
-h6 strong {
-    font-weight: normal; /* Defina o peso da fonte para normal dentro do elemento strong */
-    font-family: verdana;
-    font-size: 56px;
-    color: #de2e21;
+.contact-form button  button i {
+    margin-left: 5px;
 }
+
+
 
 .BSnch {
     display: flex;
@@ -200,87 +354,9 @@ h6 strong {
     margin-top: 0;
 }
 
-.parallelogram {
-    transform: skew(-20deg);
-    display: inline-block;
-    position: relative;
-}
-
-.parallelogram span {
-    display: inline-block;
-    transform: skew(20deg);
-}
-
-.parallelogram h4 {
-    display: inline-block;
-    transform: skew(20deg);
-    margin: 0;
-    font-size: 14px; /* Reduzindo o tamanho da fonte */
-}
-
-
-
-.mapa img {
-    max-width: 100%; /* Define a largura da imagem como 100% do seu contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Garante que a imagem se comporte como um bloco */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-}
-
-
-
-/* Estilo da ficha */
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
-/* Estilo do grupo de formulários */
-.form-group {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-.form-group input[type="text"] {
-    width: calc(100% - 22px);
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
 
 /* Estilo do botão centralizado */
-.btn-center {
-    text-align: center;
-    margin-top: 20px;
-}
 
-.btn-center button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #de2e21;
-    color: #fff;
-    cursor: pointer;
-}
-
-.btn-center button i {
-    margin-left: 5px;
-}
 
 .rodape {
     background-color: #808080; /* Cinza claro */
@@ -327,39 +403,15 @@ h6 strong {
 }
 
 
-@media screen and (max-width: 768px) {
-    .botao-2 {
-        display: block; /* O botão agora ocupará toda a largura do container */
-        width: 100%; /* Faz o botão esticar para ocupar 100% da largura disponível */
-        margin: 0 auto; /* Centraliza o botão horizontalmente */
-        padding: 15px 0; /* Aumenta o padding vertical para facilitar a interação tátil */
-        font-size: 18px; /* Aumenta o tamanho da fonte para melhor leitura em dispositivos pequenos */
+@media screen and (max-width: 1080px) {
+    .section-lists {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 768px) {
-    .texto-sobreposto {
-        top: 10%; /* Ajusta a posição vertical para evitar sobreposição */
-        left: 0; /* Centraliza o texto horizontalmente */
-        width: 100%; /* Faz o texto ocupar toda a largura da imagem */
-    }
 
-    .texto-sobreposto h3 {
-        font-size: 24px; /* Reduz o tamanho da fonte para melhor leitura */
-    }
-
-    .texto-sobreposto p {
-        font-size: 14px; /* Reduz o tamanho da fonte para consistência */
-    }
-
-    .botao-whatsapp {
-        top: 70%; /* Ajusta a posição vertical para dar espaço ao texto */
-        left: 50%; /* Centraliza o botão na tela */
-    }
-
-    .botao-whatsapp-centralizado {
-        width: 100%; /* Faz o botão ocupar toda a largura do container */
-        padding: 12px 0; /* Aumenta o padding para uma melhor interação tátil */
-        font-size: 16px; /* Mantém a legibilidade em telas pequenas */
+@media screen and (max-width: 680px) {
+    .section-lists {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

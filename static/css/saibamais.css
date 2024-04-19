@@ -108,6 +108,28 @@ button {
     font-size: 14px; /* Tamanho de letra menor */
 }
 
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    
+}
+
+.whatsapp-button img {
+    width: 80%; 
+    height: auto; 
+}
+
 .rodape {
     background-color: #808080; /* Cinza claro */
     padding: 20px 0; /* Espaçamento interno */

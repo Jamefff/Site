@@ -56,13 +56,14 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #d15349;
+    color: #de2e21;
 }
 
 .banner-nossahistoria .texto-sobreposto h2 {
     font-size: 22px;
     margin: 0;
     line-height: 1.5;
+    color: #de2e21;
 }
 
 .carousel {
@@ -178,4 +179,20 @@ button {
 .icone-social {
     color: #FFFFFF; /* Define a cor do ícone como branco */
     margin-right: 10px; /* Ajuste o espaçamento entre os ícones conforme necessário */
+}
+
+
+@media (max-width: 728px) {
+    .banner-nossahistoria {
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .banner-nossahistoria img {
+        width: 100%; 
+        height: auto; 
+        display: block;
+    }
 }

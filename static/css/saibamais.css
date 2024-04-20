@@ -196,3 +196,23 @@ button {
         display: block;
     }
 }
+
+@media (max-width: 728px) {
+    .footer-container {
+        flex-direction: column; 
+        padding: 30px; 
+        text-align: center; 
+    }
+
+    .logo-contatos {
+        margin-bottom: 20px; 
+    }
+
+    .contatos {
+        margin: 10px auto; 
+    }
+
+    .redes-sociais {
+        justify-content: center; 
+    }
+}

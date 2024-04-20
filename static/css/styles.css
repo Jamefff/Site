@@ -359,10 +359,6 @@ body {
     margin-top: 0;
 }
 
-
-/* Estilo do botão centralizado */
-
-
 .rodape {
     background-color: #808080; /* Cinza claro */
     padding: 20px 0; /* Espaçamento interno */
@@ -418,5 +414,25 @@ body {
 @media screen and (max-width: 680px) {
     .section-lists {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 728px) {
+    .footer-container {
+        flex-direction: column; 
+        padding: 30px; 
+        text-align: center; 
+    }
+
+    .logo-contatos {
+        margin-bottom: 20px; 
+    }
+
+    .contatos {
+        margin: 10px auto; 
+    }
+
+    .redes-sociais {
+        justify-content: center; 
     }
 }

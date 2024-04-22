@@ -178,7 +178,13 @@
                     <h2 class="highlight">Seja um Agregado</h2>
                     <p class="section-subtitle">Estamos Agregando!</p>
                 </div>
-                <div class="contact-form">
+                
+                <form
+      action="https://formsubmit.co/ajax/Jameftransportes.contato@gmail.com"
+      method="POST"
+      data-form
+    >
+                <div class="contact-form" data-form="[data-form]" data-button="[data-button]">
                     <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome completo">
                     <input type="text" id="cpf" name="cpf" placeholder="CPF">
                     <input type="text" id="telefone" name="telefone" placeholder="Telefone com DDD">
@@ -186,7 +192,10 @@
                     <input type="text" id="veiculo" name="veiculo" placeholder="Veículo">
                     <input type="text" id="placa" name="placa" placeholder="Placa">
                     <button type="submit">ENVIAR FICHA DE CADASTRO <i class="fa fa-check-circle"></i></button>
+                    <div class="success" style="display: none;"><h1>Mensagem enviada!</h1></div>
+                    <div class="error" style="display: none;"><h1>Não foi possível enviar sua mensagem.</h1></div>
                 </div>
+                </form>
             </div>
         </section>
     </main>
@@ -218,7 +227,7 @@
         </div>
     </footer>
 
-
+    <script src="/static/js/app.js"></script>
     <script src="/static/js/reposicionamento.js"></script>
 
 </body>

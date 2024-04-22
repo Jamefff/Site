@@ -315,7 +315,18 @@ body {
     margin-left: 5px;
 }
 
+.success,
+.error {
+  text-align: center;
+}
 
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}
 
 .BSnch {
     display: flex;

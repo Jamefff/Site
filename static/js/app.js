@@ -2,8 +2,7 @@ class FormSubmit {
     constructor(settings) {
       this.settings = settings;
       this.form = document.querySelector(settings.form);
-      this.successMessage = document.querySelector(settings.success);
-      this.errorMessage = document.querySelector(settings.error);
+      this.formButton = document.querySelector(settings.button);
       if (this.form) {
         this.url = this.form.getAttribute("action");
       }
@@ -11,7 +10,7 @@ class FormSubmit {
     }
   
     displaySuccess() {
-      this.form.reset(); 
+      this.form.reset(); // Reset the form fields
       this.successMessage.style.display = "block";
       this.errorMessage.style.display = "none";
     }
@@ -50,8 +49,8 @@ class FormSubmit {
     }
   
     onSubmission() {
-      this.settings.button.disabled = true;
-      this.settings.button.innerHTML = "Enviando...";
+      this.formButton.disabled = true;
+      this.formButton.innerText = "Enviando...";
     }
   
     init() {
@@ -62,8 +61,9 @@ class FormSubmit {
   
   const formSubmit = new FormSubmit({
     form: ".contact-form",
+    button: ".contact-form button",
     success: ".success",
     error: ".error",
-    button: document.querySelector(".contact-form button"),
   });
   formSubmit.init();
+  

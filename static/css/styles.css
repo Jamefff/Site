@@ -332,19 +332,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 5px; /* Reduzindo o espaçamento entre os elementos */
+    gap: 5px; 
 }
 
 .sc-eHgmQL {
-    width: calc(30% - 5px); /* Ajustando a largura com base no espaçamento */
-    margin-bottom: 10px; /* Reduzindo a margem inferior */
+    width: calc(30% - 5px); 
+    margin-bottom: 10px; 
 }
 
 .bg-red {
     background-color: #de2e21;
     color: #fff;
-    padding: 6px 12px; /* Reduzindo o padding */
-    margin-bottom: 5px; /* Reduzindo a margem inferior */
+    padding: 6px 12px; 
+    margin-bottom: 5px; 
     position: relative;
 }
 
